@@ -31,9 +31,9 @@ Read this section carefully before modifying the plugin code. Here's an outline:
 
 ## 1. Git Version Control System
 
-[Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. The development of this plugin uses Git for this purpose. More specifically, we use [Beanstalk](https://beanstalkapp.com) as our public Git repository.
+[Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. The development of this plugin uses Git for this purpose. More specifically, we use [GitHub](https://github.com) as our public Git repository.
 
-We will show you a couple of common ways to start using Git, with [Beanstalk as an example repository](https://support.beanstalkapp.com/article/848-getting-started-with-git-creating-your-repository).
+We will show you a couple of common ways to start using Git, with GitHub as an example repository.
 
 ### Starting From Scratch
 
@@ -41,12 +41,12 @@ To start using your repository from scratch, on your command line type the follo
 
 ```
 cd /wp-content/plugins
-git clone git@freshwebstudio.git.beanstalkapp.com:/freshwebstudio/icegram-weekdays.git -o beanstalk icegram-weekdays
+git clone https://github.com/dfaltermier/icegram-weekdays.git icegram-weekdays
 cd icegram-weekdays
 echo "Append a line to my README.md file." >> README.md
 git add README.md
-git commit -m "My first commit."
-git push beanstalk master
+git commit -m "My commit message."
+git push -u origin master
 ```
 
 With the commands above, you will create a folder, download the plugin from Git, modify a file in it, make your first commit, and push the changes to your repository, to master branch. Master branch is the default branch to use for your files.
@@ -58,53 +58,10 @@ To import your existing files from your local machine type the following in your
 ```
 cd /wp-content/plugins/icegram-weekdays
 git init
-git remote add beanstalk git@freshwebstudio.git.beanstalkapp.com:/freshwebstudio/icegram-weekdays.git
+git remote add origin https://github.com/dfaltermier/icegram-weekdays.git
 git add .
 git commit -m "Importing my project to Git."
-git push beanstalk master
-```
-
-### Tagging
-
-You can also tag commits to represent plugin versions after you commit your changes. Suppose your commit history looks like this:
-
-```
-$ git log --pretty=oneline
-7a14d966d750a3ae24d68bdd80849a6fccc13d22 (HEAD -> master, beanstalk/master, beanstalk/HEAD) Updated version.
-da74cfe37fa6c6394bb9ba4553cf031377193a6b Did more stuff.
-2f42bb4b20002306f2d08ad31cc3f83c1f9ca849 Did stuff.
-...
-```
-
-Now, tag the project at v1.0.1, which was at the HEAD commit. To tag that commit, you specify the commit checksum (or first 7 characters) at the end of the command:
-
-```
-$ git tag -a v1.0.1 7a14d96
-
-# By default, the git push command doesn’t transfer tags to 
-# remote servers. You will have to explicitly do this.
-$ git push beanstalk v1.0.1
-```
-
-Now you can see the tagged commit:
-
-```
-$ git log --pretty=oneline
-7a14d966d750a3ae24d68bdd80849a6fccc13d22 (HEAD -> master, tag: v1.0.1, beanstalk/master, beanstalk/HEAD) Updated version.
-da74cfe37fa6c6394bb9ba4553cf031377193a6b Did more stuff.
-2f42bb4b20002306f2d08ad31cc3f83c1f9ca849 Did stuff.
-...
-```
-
-If you mistakenly tag a commit, you can undo this by deleting the tag:
-
-```
-# Delete from remote repository
-$ git push --delete beanstalk v1.0.1
-
-# Delete from local repository
-$ git tag -d v1.0.1
-
+git push -u origin master
 ```
 
 ### Git Files
