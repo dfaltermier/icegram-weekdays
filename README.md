@@ -25,7 +25,6 @@ Read this section carefully before modifying the plugin code. Here's an outline:
     1. Git Version Control System
         -- Starting From Scratch
         -- Import Existing Files on Your Computer
-        -- Tagging
         -- Git Files
     And That's It!
 
