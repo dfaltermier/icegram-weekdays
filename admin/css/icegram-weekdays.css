@@ -1,0 +1,7 @@
+/**
+ * CSS for our admin backend pages.
+ */
+.icegram-weekdays-admin-when-day-label {
+    margin-left: 1em;
+    white-space: nowrap;
+}
