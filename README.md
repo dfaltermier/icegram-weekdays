@@ -10,11 +10,12 @@ This plugin adds a feature to the [Icegram Popups, Welcome Bar, Optins and Lead 
 
 # Installation
 
-    1. Unzip and upload contents of the plugin to your /wp-content/plugins/ directory.
-    2. Activate the plugin through the ‘Plugins’ menu in WordPress.
-    3. Click on ‘Icegram -> Campaigns -> Display Rules tab’ from the WordPress admin sidebar menu.
-    4. In the Display Rules tabbed panel, navigate to the 'When?' section.
-    5. Click the radio button for 'Schedule.' Seven checkboxes will appear, one for each day of the week. Select the days of the week you wish your campaign to run within your selected date range.
+    1. Navigate to your site's /wp-content/plugins directory.
+    2. Unzip plugin to /wp-content/plugins/icegram-weekdays directory.
+    3. Activate the plugin through the ‘Plugins’ menu in WordPress.
+    4. Click on ‘Icegram -> Campaigns -> Display Rules tab’ from the WordPress admin sidebar menu.
+    5. In the Display Rules tabbed panel, navigate to the 'When?' section.
+    6. Click the radio button for 'Schedule.' Seven checkboxes will appear, one for each day of the week. Select the days of the week you wish your campaign to run within your selected date range.
 
 ![icegram-weekdays-configuration](https://user-images.githubusercontent.com/3323104/43471928-7a011984-94a9-11e8-8c77-3de6f9419b48.jpg)
 
