@@ -10,7 +10,7 @@
  * Plugin Name:    Icegram - Popups (Weekdays Addon)
  * Plugin URI:     https://github.com/dfaltermier/icegram-weekdays
  * Description:    This is an addon to the <a href="https://wordpress.org/plugins/icegram/" target="_blank">Icegram Popups, Welcome Bar, Optins and Lead Generation plugin</a> by Icegram. It provides an option for message campaigns to be displayed during selected days of the week within a given date range.
- * Version:        1.0.1
+ * Version:        1.0.2
  * Author:         FreshWeb Studio
  * Author URI:     https://www.freshwebstudio.com
  * Text Domain:    icegram-weekdays
@@ -19,7 +19,6 @@
  * 
  * @package    Icegram_Weekdays
  * @subpackage Functions
- * @copyright  Copyright (c) 2018, www.freshwebstudio.com
  * @link       https://www.freshwebstudio.com/
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @since      0.9.1
@@ -50,6 +49,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-icegram-weekdays.php';
  * @since 0.9.1
  */
 function icegram_weekdays_activation() {
+    // Empty now, but use later if needed.
 }
 register_activation_hook( __FILE__, 'icegram_weekdays_activation' );
 
@@ -59,6 +59,7 @@ register_activation_hook( __FILE__, 'icegram_weekdays_activation' );
  * @since 0.9.1
  */
 function icegram_weekdays_deactivation() {
+    // Empty now, but use later if needed.
 }
 register_deactivation_hook( __FILE__, 'icegram_weekdays_deactivation' );
 

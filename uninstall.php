@@ -21,8 +21,6 @@
  *
  * @package    Icegram_Weekdays
  * @subpackage Functions
- * @copyright  Copyright (c) 2018, www.freshwebstudio.com
- * @link       https://www.freshwebstudio.com
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @since      0.9.1
  */

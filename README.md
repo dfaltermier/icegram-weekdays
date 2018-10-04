@@ -1,17 +1,21 @@
 # Icegram - Popups (Weekdays Addon)
 
-If you're reading this file, it probably means that you are either responsible for the development of this plugin, inquisitive, or you have a lot of time on your hands. Let's assume that you're a web developer and are now responsible for future develpment or content changes in this plugin. Hopefully, we at FreshWeb Studio, the developers of this plugin, have created this plugin sufficiently to make your job easier.
+If you're reading this file, it probably means that you are either responsible for the development of this plugin, inquisitive, or you have a lot of time on your hands. Let's assume that you're a web developer and are now responsible for future develpment or content changes in this plugin. Hopefully, this plugin was developed in a manner sufficient to make your job easier.
 
 This document is intended just for you, to provide you with the development details of this plugin and instructions for maintaining it.
 
 # Plugin Summary
 
-This plugin adds a feature to the [Icegram Popups, Welcome Bar, Optins and Lead Generation plugin by Icegram](https://wordpress.org/plugins/icegram/) that it currently does not provide. With the Icegram plugin, it is possible to create a message campaign that is enabled to run within a defined date range. However, it does not provide the ability to limit the campaign to selected days of the week within that range. For example, running the campaign Monday, Wednesday, and Friday only. Our plugin adds this feature.
+This plugin adds a feature to the [Icegram Popups, Welcome Bar, Optins and Lead Generation plugin by Icegram](https://wordpress.org/plugins/icegram/) that it currently does not provide. With the Icegram plugin, it is possible to create optins and call-to-action banners (message campaigns) that display to the user only within a defined date range. However, it does not provide the ability to limit the campaign to selected days of the week within that range. For example, running the campaign Monday, Wednesday, and Friday only. Our plugin adds this feature.
+
+# Dependencies
+
+Before installing our plugin, you must install the [Icegram Popups, Welcome Bar, Optins and Lead Generation plugin](https://wordpress.org/plugins/icegram/).
 
 # Installation
 
-    1. Navigate to your site's /wp-content/plugins directory.
-    2. Unzip plugin to /wp-content/plugins/icegram-weekdays directory.
+    1. Download the plugin from this repository.
+    2. Navigate to your WordPress site's /wp-content/plugins directory and copy the plugin folder in to it.
     3. Activate the plugin through the ‘Plugins’ menu in WordPress.
     4. Click on ‘Icegram -> Campaigns -> Display Rules tab’ from the WordPress admin sidebar menu.
     5. In the Display Rules tabbed panel, navigate to the 'When?' section.
@@ -26,7 +30,6 @@ Read this section carefully before modifying the plugin code. Here's an outline:
     1. Git Version Control System
         -- Starting From Scratch
         -- Import Existing Files on Your Computer
-        -- Git Files
     And That's It!
 
 ## 1. Git Version Control System
@@ -64,24 +67,9 @@ git commit -m "Importing my project to Git."
 git push -u origin master
 ```
 
-### Git Files
-
-As a result of using Git, you may see the following files in the root project folder:
-
-```
-/freshweb
-+-- /.git       // Local Git repository
-+-- .gitignore  // List folders/files Git should ignore
-
-```
-
-As long as FreshWeb Studio manages this plugin, we'll keep it in a Git repository. This allows us to track changes and deploy the correct production versions. It is highly recommended that if you inherit responsibility for the development of this plugin, you continue to use Git or other version control system as your repository.
-
 Learning and using Git is beyond the scope of these instructions. [Get started with Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics).
 
 # And That's It!
 
-We hope these instructions are helpful if you find yourself maintaining the development of this plugin. 
-
-David Faltermier, July 31, 2018. [FreshWeb Studio](https://www.freshwebstudio.com)
+We hope these instructions are helpful if you find yourself maintaining the development of this plugin.
 
